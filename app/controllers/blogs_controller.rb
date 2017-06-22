@@ -14,7 +14,6 @@ class BlogsController < ApplicationController
   end
 
   def create
-
     @blog = Blog.new(blogs_params)
     @blog.user_id = current_user.id
     @blog.name = current_user.name
