@@ -3,6 +3,7 @@ class BlogsController < ApplicationController
   
   def index
     @blogs = Blog.all
+#    binding.pry
   end
 
   def new
@@ -60,3 +61,5 @@ class BlogsController < ApplicationController
       @blog = Blog.find(params[:id])
     end
 end
+
+
