@@ -44,4 +44,5 @@ Rails.application.configure do
   
   config.consider_all_requests_local = false
 
+  BetterErrors::Middleware.allow_ip! "0.0.0.0/0" 
 end
